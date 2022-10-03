@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:mediadive="https://mediadive.dsmz.de/"
+   xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:sbol="http://sbols.org/v3#"
+>
+  <rdf:Description rdf:about="http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1/Measure1">
+    <sbol:displayId>Measure1</sbol:displayId>
+    <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Measure"/>
+    <rdf:type rdf:resource="http://sbols.org/v3#Identified"/>
+    <om:hasNumericalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">500.0</om:hasNumericalValue>
+    <om:hasUnit rdf:resource="http://purl.obolibrary.org/obo/UO_0000098"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM">
+    <sbol:displayId>BACILLUS_ACIDOCALDARIUS_MEDIUM</sbol:displayId>
+    <sbol:name>BACILLUS ACIDOCALDARIUS MEDIUM</sbol:name>
+    <rdf:type rdf:resource="http://sbols.org/v3#Component"/>
+    <sbol:hasNamespace rdf:resource="http://sbols.org/unspecified_namespace"/>
+    <sbol:type rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48164"/>
+    <mediadive:id>https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium13.pdf</mediadive:id>
+    <mediadive:complex_medium>yes</mediadive:complex_medium>
+    <mediadive:source>DSMZ</mediadive:source>
+    <mediadive:link>https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium13.pdf</mediadive:link>
+    <sbol:hasFeature rdf:resource="http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1"/>
+    <sbol:hasFeature rdf:resource="http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2/Measure1">
+    <sbol:displayId>Measure1</sbol:displayId>
+    <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Measure"/>
+    <rdf:type rdf:resource="http://sbols.org/v3#Identified"/>
+    <om:hasNumericalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">500.0</om:hasNumericalValue>
+    <om:hasUnit rdf:resource="http://purl.obolibrary.org/obo/UO_0000098"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2">
+    <sbol:displayId>ExternallyDefined2</sbol:displayId>
+    <sbol:name>Solution B</sbol:name>
+    <rdf:type rdf:resource="http://sbols.org/v3#ExternallyDefined"/>
+    <sbol:type rdf:resource="http://purl.obolibrary.org/obo/NCIT_C70830"/>
+    <sbol:definition rdf:resource="https://mediadive.dsmz.de/solutions/18"/>
+    <mediadive:recipe_order>2</mediadive:recipe_order>
+    <mediadive:optional>0</mediadive:optional>
+    <sbol:hasMeasure rdf:resource="http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2/Measure1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1">
+    <sbol:displayId>ExternallyDefined1</sbol:displayId>
+    <sbol:name>Solution A</sbol:name>
+    <rdf:type rdf:resource="http://sbols.org/v3#ExternallyDefined"/>
+    <sbol:type rdf:resource="http://purl.obolibrary.org/obo/NCIT_C70830"/>
+    <sbol:definition rdf:resource="https://mediadive.dsmz.de/solutions/17"/>
+    <mediadive:recipe_order>1</mediadive:recipe_order>
+    <mediadive:optional>0</mediadive:optional>
+    <sbol:hasMeasure rdf:resource="http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1/Measure1"/>
+  </rdf:Description>
+</rdf:RDF>
