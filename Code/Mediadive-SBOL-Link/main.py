@@ -14,7 +14,7 @@ count = 1
 for med in medias:
     print(count, med['id'])
 
-    output_path = os.path.join(output_folder,  f'{med["id"]}.xml')
+    output_path = os.path.join(output_folder,  f'{med["id"]}.nt')
     
     media.create(output_path, med['id'])
 

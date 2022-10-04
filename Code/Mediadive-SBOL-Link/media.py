@@ -46,7 +46,10 @@ def create(output_path, media_id):
                     ing_dict = requests.get(url).json()['data']
                     
 
-                    # set defined as via Chebi, or if it doesn't exist via media dive
+                    # set defined as via Pubchem, Chebi, or if it doesn't exist via media dive
+                    # if ing_dict["ChEBI"] is not None:
+                    #     definition = f'https://pubchem.ncbi.nlm.nih.gov/compound/{ing_dict["ChEBI"]}'
+                    #     chebi_exists = True
                     if ing_dict["ChEBI"] is not None:
                         definition = f'https://identifiers.org/CHEBI:{ing_dict["ChEBI"]}'
                         chebi_exists = True
@@ -58,7 +61,7 @@ def create(output_path, media_id):
                     measure = sbol3.Measure(value=ing['amount'], unit=ontology_of_measures[ing['unit']])
 
                     # create ingredient
-                    types = ['http://purl.obolibrary.org/obo/NCIT_C48807']
+                    types = ['https://identifiers.org/SBO:0000247']  # simple chemical
                     extchem = sbol3.ExternallyDefined(types, definition, name=ing_dict['name'], measures=[measure])
 
                     # add ingredient properties
