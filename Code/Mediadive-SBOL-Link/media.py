@@ -47,15 +47,16 @@ def create(output_path, media_id):
                     
 
                     # set defined as via Pubchem, Chebi, or if it doesn't exist via media dive
-                    # if ing_dict["ChEBI"] is not None:
-                    #     definition = f'https://pubchem.ncbi.nlm.nih.gov/compound/{ing_dict["ChEBI"]}'
-                    #     chebi_exists = True
-                    if ing_dict["ChEBI"] is not None:
+                    if ing_dict["PubChem"] is not None:
+                        definition = f'https://pubchem.ncbi.nlm.nih.gov/compound/{ing_dict["PubChem"]}'
+                        id = 'PubChem'
+                    elif ing_dict["ChEBI"] is not None:
                         definition = f'https://identifiers.org/CHEBI:{ing_dict["ChEBI"]}'
-                        chebi_exists = True
+                        id = 'ChEBI'
                     else:
                         definition = f'https://mediadive.dsmz.de/ingredients/{ing_dict["id"]}?'
-                        chebi_exists = False
+                        id = 'MediaDive'
+
 
                     # create measure
                     measure = sbol3.Measure(value=ing['amount'], unit=ontology_of_measures[ing['unit']])
@@ -65,8 +66,11 @@ def create(output_path, media_id):
                     extchem = sbol3.ExternallyDefined(types, definition, name=ing_dict['name'], measures=[measure])
 
                     # add ingredient properties
-                    for key in ['id', 'CAS-RN', 'mass','formula','density']:
-                        if key == 'id' and not chebi_exists:
+                    for key in ['id', 'CAS-RN', 'ChEBI', 'mass','formula','density']:
+                        #Skips the MediaDive ID and ChEBI ID if they were used to define the substance
+                        if key == 'id' and id == 'MediaDive':
+                            pass
+                        elif key == 'ChEBI' and id == 'ChEBI':
                             pass
                         else:
                             if ing_dict[key] is not None:

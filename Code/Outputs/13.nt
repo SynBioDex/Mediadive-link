@@ -1,0 +1,37 @@
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1/Measure1> <http://sbols.org/v3#displayId> "Measure1" .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1> <http://sbols.org/v3#displayId> "ExternallyDefined1" .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2> <https://mediadive.dsmz.de/recipe_order> "2" .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1/Measure1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sbols.org/v3#Identified> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1> <http://sbols.org/v3#name> "Solution A" .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1> <http://sbols.org/v3#type> <http://purl.obolibrary.org/obo/NCIT_C70830> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2> <http://sbols.org/v3#displayId> "ExternallyDefined2" .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1> <http://sbols.org/v3#hasMeasure> <http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1/Measure1> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sbols.org/v3#ExternallyDefined> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1> <https://mediadive.dsmz.de/optional> "0" .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2/Measure1> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://purl.obolibrary.org/obo/UO_0000098> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM> <https://mediadive.dsmz.de/source> "DSMZ" .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sbols.org/v3#Component> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM> <https://mediadive.dsmz.de/id> "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium13.pdf" .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2> <https://mediadive.dsmz.de/optional> "0" .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2/Measure1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM> <http://sbols.org/v3#displayId> "BACILLUS_ACIDOCALDARIUS_MEDIUM" .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2/Measure1> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "500.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2> <http://sbols.org/v3#type> <http://purl.obolibrary.org/obo/NCIT_C70830> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM> <https://mediadive.dsmz.de/link> "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium13.pdf" .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1> <http://sbols.org/v3#definition> <https://mediadive.dsmz.de/solutions/17> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1/Measure1> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://purl.obolibrary.org/obo/UO_0000098> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1> <https://mediadive.dsmz.de/recipe_order> "1" .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM> <http://sbols.org/v3#hasFeature> <http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM> <http://sbols.org/v3#hasNamespace> <http://sbols.org/unspecified_namespace> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2> <http://sbols.org/v3#definition> <https://mediadive.dsmz.de/solutions/18> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM> <http://sbols.org/v3#name> "BACILLUS ACIDOCALDARIUS MEDIUM" .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM> <http://sbols.org/v3#hasFeature> <http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2/Measure1> <http://sbols.org/v3#displayId> "Measure1" .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM> <https://mediadive.dsmz.de/complex_medium> "yes" .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1/Measure1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1/Measure1> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "500.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM> <http://sbols.org/v3#type> <http://purl.obolibrary.org/obo/NCIT_C48164> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2/Measure1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sbols.org/v3#Identified> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2> <http://sbols.org/v3#name> "Solution B" .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2> <http://sbols.org/v3#hasMeasure> <http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined2/Measure1> .
+<http://sbols.org/unspecified_namespace/BACILLUS_ACIDOCALDARIUS_MEDIUM/ExternallyDefined1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sbols.org/v3#ExternallyDefined> .
